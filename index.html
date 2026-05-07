@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>معاذ للعقارات | الرفاهية العالمية</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">إسكان <span>العالمية</span></div>
+        <div class="portfolio-tag">بورتفوليو: معاذ سامي</div>
+    </header>
+
+    <section class="hero">
+        <h1>منزلك الجديد بلمسة احترافية</h1>
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="ابحث عن مدينة (القاهرة، الإسكندرية، الجونة)...">
+            <button id="searchBtn">بحث</button>
+        </div>
+    </section>
+
+    <main class="container">
+        <h2 class="section-title">عقارات مميزة (<span id="count">0</span>)</h2>
+        <div class="grid" id="propertyGrid"></div>
+    </main>
+
+    <div class="modal" id="propertyModal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <img id="modalImg" src="" alt="Property Image">
+            <div class="modal-info">
+                <h2 id="modalTitle"></h2>
+                <p id="modalLocation" class="location-text"></p>
+                <h3 id="modalPrice" class="price-text"></h3>
+                <hr class="divider">
+                <ul>
+                    <li><i class="fas fa-bed icon-accent"></i> غرف النوم: <span id="modalBeds"></span></li>
+                    <li><i class="fas fa-bath icon-accent"></i> الحمامات: <span id="modalBaths"></span></li>
+                    <li><i class="fas fa-expand icon-accent"></i> المساحة: <span id="modalArea"></span></li>
+                </ul>
+                <button class="btn-primary">طلب معاينة العقار</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
